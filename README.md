@@ -13,9 +13,9 @@ A full-stack task management application built with React, Node.js, and PostgreS
 
 ## Demo
 
-[![Task Management App Demo](https://img.youtube.com/vi/eiZA-2tYIeg/maxresdefault.jpg)](https://youtu.be/eiZA-2tYIeg)
+https://www.youtube.com/watch?v=eiZA-2tYIeg
 
-Click the image above to watch the demo video on YouTube.
+The video above should play directly in GitHub's interface. If it doesn't load, you can [watch it on YouTube](https://youtu.be/eiZA-2tYIeg).
 
 ## Tech Stack
 
