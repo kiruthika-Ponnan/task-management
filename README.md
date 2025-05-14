@@ -11,6 +11,24 @@ A full-stack task management application built with React, Node.js, and PostgreS
 - Modern, responsive UI with Tailwind CSS
 - Real-time error handling and loading states
 
+## Demo
+
+https://github.com/[username]/task-management/blob/main/demo/kiruthika_Ponnan.mov
+
+This repository uses Git LFS to handle the demo video file. To properly clone and view the demo:
+
+1. Make sure you have Git LFS installed:
+```bash
+git lfs install
+```
+
+2. Clone the repository:
+```bash
+git clone <repository-url>
+```
+
+The demo video will be downloaded automatically when you clone the repository.
+
 ## Tech Stack
 
 ### Frontend
@@ -58,38 +76,13 @@ The setup script will:
 - Initialize the database with required tables
 - Install dependencies for both frontend and backend
 - Build the Docker images
+- Start the application
 
-3. Start the application:
-```bash
-docker-compose up -d
-```
 
 The application will be available at:
 - Frontend: http://localhost:3000
 - Backend API: http://localhost:4000
 
-### Development
-
-To run the application in development mode:
-
-1. Frontend development:
-```bash
-cd frontend
-npm install
-npm start
-```
-
-2. Backend development:
-```bash
-cd backend
-npm install
-npm run dev
-```
-
-3. Database:
-```bash
-docker-compose up db -d
-```
 
 ## Project Structure
 
