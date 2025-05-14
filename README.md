@@ -13,7 +13,7 @@ A full-stack task management application built with React, Node.js, and PostgreS
 
 ## Demo
 
-https://github.com/[username]/task-management/blob/main/demo/kiruthika_Ponnan.mov
+https://github.com/kiruthika-Ponnan/task-management/blob/main/demo/kiruthika_Ponnan.mov
 
 This repository uses Git LFS to handle the demo video file. To properly clone and view the demo:
 
@@ -94,6 +94,75 @@ task-management/
 ├── docker-compose.yml # Docker configuration
 └── setup.sh           # Setup script for initial configuration
 ```
+
+## Codebase Overview
+
+### Frontend Architecture
+The frontend is built with React and TypeScript, featuring a modern component-based architecture:
+- `components/` - Reusable UI components (forms, buttons, task items)
+- `pages/` - Main application views (login, registration, dashboard)
+- `store/` - Zustand stores for state management (auth, tasks)
+- `api/` - API integration layer with axios
+- `types/` - TypeScript interfaces and type definitions
+- `utils/` - Helper functions and utilities
+
+### Backend Architecture
+The backend follows a layered architecture pattern:
+- `controllers/` - Request handlers for auth and tasks
+- `entities/` - TypeORM entities for User and Task
+- `middleware/` - Authentication and validation middleware
+- `routes/` - API route definitions
+- `services/` - Business logic layer
+- `config/` - Configuration management
+
+### Database Schema
+PostgreSQL database with two main tables:
+- `users` - Stores user information and authentication details
+- `tasks` - Stores task data with foreign key relationship to users
+
+### Docker Configuration
+The application uses a multi-container setup with Docker Compose:
+
+```yaml
+services:
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - REACT_APP_API_URL=http://localhost:4000
+
+  backend:
+    build: ./backend
+    ports:
+      - "4000:4000"
+    depends_on:
+      - db
+    environment:
+      - DATABASE_URL=postgresql://user:password@db:5433/taskdb
+      - JWT_SECRET=your-secret-key
+
+  db:
+    image: postgres:15
+    ports:
+      - "5433:5432"
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=taskdb
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
+```
+
+Key features of the Docker setup:
+- Isolated containers for each service
+- Volume mounting for database persistence
+- Environment variable configuration
+- Inter-container networking
+- Hot-reload enabled for development
 
 ## API Endpoints
 
