@@ -13,23 +13,9 @@ A full-stack task management application built with React, Node.js, and PostgreS
 
 ## Demo
 
-![Demo Preview](demo/preview/demo-preview.gif)
+[![Task Management App Demo](https://img.youtube.com/vi/eiZA-2tYIeg/maxresdefault.jpg)](https://youtu.be/eiZA-2tYIeg)
 
-**[▶️ Watch Full Demo Video](demo/kiruthika_Ponnan.mov)**
-
-This repository uses Git LFS to handle the demo video file. To properly clone and view the demo:
-
-1. Make sure you have Git LFS installed:
-```bash
-git lfs install
-```
-
-2. Clone the repository:
-```bash
-git clone <repository-url>
-```
-
-The demo video will be downloaded automatically when you clone the repository.
+Click the image above to watch the demo video on YouTube.
 
 ## Tech Stack
 
