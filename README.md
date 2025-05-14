@@ -13,7 +13,14 @@ A full-stack task management application built with React, Node.js, and PostgreS
 
 ## Demo
 
-https://github.com/kiruthika-Ponnan/task-management/blob/main/demo/kiruthika_Ponnan.mov
+<video width="100%" controls>
+  <source src="demo/kiruthika_Ponnan.mov" type="video/quicktime">
+  Your browser does not support the video tag. You can [download the demo video](demo/kiruthika_Ponnan.mov) instead.
+</video>
+
+> **Note**: If the video doesn't play directly, you can:
+> 1. [Download the video](demo/kiruthika_Ponnan.mov) to watch locally
+> 2. View it on [GitHub](https://github.com/kiruthika-Ponnan/task-management/blob/main/demo/kiruthika_Ponnan.mov)
 
 This repository uses Git LFS to handle the demo video file. To properly clone and view the demo:
 
@@ -176,10 +183,3 @@ Key features of the Docker setup:
 - PUT /api/tasks/:id - Update a task
 - DELETE /api/tasks/:id - Delete a task
 
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
